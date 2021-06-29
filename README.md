@@ -1,6 +1,6 @@
-# full stack stock search project
+# Django Stock Filter App
 
-*For starters, the name of the file "full-stack-dcf" is a little misleading. When I started this project, I just wanted to practice using Django and front-end
+*For starters, the name of the file "fullstackdcf" is a little misleading. When I started this project, I just wanted to practice using Django and front-end
 design concepts. I originally wanted to make this project so that the app would display a discounted cash flow value for the ticker symbol that was searched, but I
 instead decided that by having the app just display equity values and ratios instead, I was able to focus moreso on the web design aspect.*
 
