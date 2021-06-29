@@ -33,10 +33,10 @@ def Analysis(request):
                 's6' : distribution[1][1],
                 's7' : distribution[1][2],
                 's8' : distribution[1][3],
-                'revenue' : revenue[0] + revenue[1] + revenue[2] + revenue[3],
-                'earnings' : earnings[0] + earnings[1] + earnings[2] + earnings[3]}
+                'revenue' : '{:20,.2f}'.format(revenue[0] + revenue[1] + revenue[2] + revenue[3]),
+                'earnings' : '{:20,.2f}'.format(earnings[0] + earnings[1] + earnings[2] + earnings[3])}
     return render(request, 'search/ticker_analysis.html', content)
 
-# section for value (pegRatio, priceToBook, trailingPE, forwardPE) .info
+
 
 
