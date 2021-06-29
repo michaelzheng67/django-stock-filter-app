@@ -20,3 +20,5 @@ A few aspects of the project that I tried incorporating:
 stocks but might not work with medium cap and smaller* 
 
 ![Screen Shot 2021-06-28 at 10 34 12 PM](https://user-images.githubusercontent.com/82613778/123728375-1e7f0400-d861-11eb-8ad5-4dbb02c52a91.png)
+
+![Screen Shot 2021-06-29 at 9 40 22 AM](https://user-images.githubusercontent.com/82613778/123807761-24ef9900-d8be-11eb-8d2b-79b4dec0c5c1.png)
