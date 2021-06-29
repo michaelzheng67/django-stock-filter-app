@@ -16,3 +16,4 @@ A few aspects of the project that I tried incorporating:
 - Django backend framework 
 - basic python finance api work (pandas dataframes)
 
+![Screen Shot 2021-06-28 at 10 34 12 PM](https://user-images.githubusercontent.com/82613778/123728375-1e7f0400-d861-11eb-8ad5-4dbb02c52a91.png)
