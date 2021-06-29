@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'search/ticker_analysis.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<div id="grid_content">
+<div class="box_one">
+    <a href="{% url 'tickersearch' %}" id="link_back">Search for another Stock</a>
+    <h1 id="title">Information For {{ name }}</h1>
+</div>
+
+<div class="box_two">
+    <h2 id="bid">Bid: {{ bid }}</h2>
+    <h2 id="ask">Ask: {{ ask }}</h2>
+    <h2 id="spread">Spread: {{ spread }}</h2>
+</div>
+
+<div class="box_three">
+    <h1 id="title_two">Value Ratios</h1>
+    <h2 id="pegratio">PEG Ratio: {{ pegratio }}</h2>
+    <h2 id="pricetobook">Price to Book: {{ pricetobook }}</h2>
+    <h2 id="trailingpe">Trailing P/E: {{ trailingpe }}</h2>
+    <h2 id="forwardpe">Forward P/E: {{ forwardpe }}</h2>
+</div>
+
+    <div class="box_four">
+        <h1 id="shareholders_title">Shareholder Distribution</h1>
+        <table>
+            <tr>
+                <th>Percentage</th>
+                <th>Split</th>
+            </tr>
+            <tr>
+                <td>{{ s1 }}</td>
+                <td>{{ s5 }}</td>
+            </tr>
+            <tr>
+                <td>{{ s2 }}</td>
+                <td>{{ s6 }}</td>
+            </tr>
+            <tr>
+                <td>{{ s3 }}</td>
+                <td>{{ s7 }}</td>
+            </tr>
+            <tr>
+                <td>{{ s4 }}</td>
+                <td>{{ s8 }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box_five">
+        <h1 id="revenue">Revenue & Earnings</h1>
+        <table>
+            <tr>
+                <th>YTD Revenue</th>
+                <th>YTD Earnings</th>
+            </tr>
+            <tr>
+                <td>{{ revenue }}</td>
+                <td>{{ earnings }}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

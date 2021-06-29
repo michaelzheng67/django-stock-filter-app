@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* the entire body of the page */
+#grid_content {
+    display: grid;
+    grid-template-areas: "head head"
+                         "price value"
+                         "shareholders money"
+                         "footer footer";
+    grid-template-rows: 150px 2fr 2fr 1fr;
+    grid-template-columns 1fr 1fr;
+}
+
+/* heading of the page */
+
+.box_one {
+    background-color: black;
+    border-radius: 3px;
+    justify-items: center;
+    grid-area: head;
+}
+
+#title {
+    font-size: 40px;
+    color: #F0E7E7;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+#link_back {
+    font-size: 15px;
+    color: #F0E7E7;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+/* end block */
+
+/* pricing of equity */
+
+.box_two {
+    background-color: midnightblue;
+    justify-items: center;
+    grid-area: price;
+}
+#bid{
+    font-size: 30px;
+    color: #55C983;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+#ask {
+    font-size: 30px;
+    color: #E85476;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+#spread {
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+/* end block */
+
+/* value ratios */
+.box_three {
+    justify-items: center;
+    grid-area: value;
+}
+
+#title_two {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: 'Georgia';
+}
+#pegratio {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    font-family: 'Georgia';
+}
+#pricetobook {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    font-family: 'Georgia';
+}
+#trailingpe {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+#forwardpe {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+/* end block */
+
+/* shareholder distribution */
+#shareholders_title {
+    text-align: center;
+}
+
+.box_four {
+    background-color: green;
+    justify-items: center;
+    grid-area: shareholders;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end block */
+
+/* revenue and earnings */
+.box_five {
+    background-color: #F5FD7C;
+    justify-items: center;
+    grid-area: money;
+}
+
+#revenue {
+    text-align: right;
+}
